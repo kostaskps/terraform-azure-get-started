@@ -8,4 +8,12 @@ terraform {
       version = "=3.52.0"
     }
   }
+
+  # Configure TF Cloud
+  cloud {
+    organization = "kostaskps"
+    workspaces {
+      name = "terraform-azure-get-started"
+    }
+  }
 }
