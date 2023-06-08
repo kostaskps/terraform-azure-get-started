@@ -1,6 +1,6 @@
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-terraform-samples"
+  name     = "rg-${var.company}-${var.project}-${var.environment}"
   location = var.default_location
 
   tags = local.common_tags
